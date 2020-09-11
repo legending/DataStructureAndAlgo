@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * 冒泡排序
+ * （1）每一轮通过比较arr[j]与arr[j-1]的大小，不符合从左小右大就交换，n那么第n轮排序能找到第n大的值（冒泡的提现）
+ * （2）重复以上步骤（n-1）轮以上步骤即可得出有序结果
  */
 public class BubbleSort implements IArraySort {
 
