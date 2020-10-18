@@ -25,17 +25,17 @@ public class QuickSort implements IArraySort {
     }
 
     private int partition(int[] arr, int left, int right) {
-        // 设定基准值（pivot）
-        int pivot = left;
-        int index = pivot + 1;
-        for (int i = index; i <= right; i++) {
-            if (arr[i] < arr[pivot]) {
-                swap(arr, i, index);
-                index++;
+        //默认基准值为arr[right]
+        int lessEqual = left-1;
+        int index = left;
+        while (index < right) {
+            if (arr[index] <= arr[right]) {
+                swap(arr, index, ++lessEqual);
             }
+            index++;
         }
-        swap(arr, pivot, index - 1);
-        return index - 1;
+        swap(arr, ++lessEqual, right);
+        return lessEqual;
     }
 
     private void swap(int[] arr, int i, int j) {
