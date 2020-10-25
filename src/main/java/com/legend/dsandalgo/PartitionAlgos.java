@@ -2,8 +2,9 @@ package com.legend.dsandalgo;
 
 /*
 * partition算法的应用
-* （1）荷兰国旗
-* （2）寻找第K大值
+* （1）快速排序
+* （2）荷兰国旗
+* （3）寻找第K大值
 * */
 
 import java.util.Arrays;
