@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RunTest {
 
-    public static void main (String [] args) {
+    public static void main (String [] args) throws Exception {
         //利用对数器证明排序方法的正确性
         int tryTimes = 1000000;
         boolean isAllPassed = true;
@@ -16,7 +16,7 @@ public class RunTest {
             //System.out.println("arr1 before: " + Arrays.toString(arr1));
             //System.out.println("arr2 before: " + Arrays.toString(arr2));
             //System.out.println("before：arr1 is " + (isEqual(arr1,arr2) ? "" : "not") + " equal to arr2");
-            new ShellSort().sort(arr1);
+            new QuickSort().sort(arr1);
             rightSort(arr2);
             //System.out.println("arr1 after: " + Arrays.toString(arr1));
             //System.out.println("arr2 after: " + Arrays.toString(arr2));
